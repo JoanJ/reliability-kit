@@ -1,0 +1,12 @@
+# Rendered output — regenerate with: python3 generate.py
+output/
+
+# Local company example — never publish
+examples/zartis/
+
+# OS / editor noise
+.DS_Store
+.vscode/
+.idea/
+__pycache__/
+incidents/

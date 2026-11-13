@@ -1,0 +1,3 @@
+id,incident,title,action,owner,due_date,status,verified_by,verified_date,source_postmortem
+A-001,INC-001,Example: checkout timeout,Add timeout alarm on payment gateway,platform-team,2026-12-01,open,,,pm-001.md
+A-002,INC-001,Example: checkout timeout,Document rollback steps in runbook,service-owner,2026-12-05,open,,,pm-001.md

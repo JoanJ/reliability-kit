@@ -1,0 +1,6 @@
+alert_id,name,source,service,owner,fired_90d,pages_per_week,has_runbook,actionable_pct,severity_if_silent,decision,new_owner,new_threshold,notes
+ALRT-001,disk-85pct,Prometheus,node-check,platform,41,0.8,yes,95,low,keep,,,example row - delete me
+ALRT-002,http-5xx-rate,Prometheus,{{services}},,112,2.3,yes,60,high,keep,,2% over 10m,example row - delete me
+ALRT-003,cpu-high,Grafana,worker-pool,platform,310,6.4,no,10,low,downgrade,,alert only,example row - delete me
+ALRT-004,cert-expiry-30d,PagerDuty,edge,platform,12,0.2,yes,100,critical,keep,,30d to 14d,example row - delete me
+ALRT-005,redis-memory,Grafana,cache,,88,1.8,no,25,medium,merge,,into redis-down,example row - delete me

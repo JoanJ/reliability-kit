@@ -1,0 +1,35 @@
+# Reliability Kit — answer these once, then run:
+#   python3 generate.py
+# Everything in 00/ 10/ 20/ 30/ 40/ 50/ renders with YOUR values.
+
+company: Acme Corp
+team_size: 40
+engineering_hours: 9-18 CET
+timezone: Europe/Madrid
+on_call: follow-the-sun          # follow-the-sun | single-rotation | business-hours
+severity_levels: 4               # 1 = customer-facing outage ... 4 = cosmetic
+contact: sre@acme.example
+
+stack:
+  metrics: Grafana
+  paging: PagerDuty
+  incidents: Linear
+
+ai_policy: human-approval-required   # read-only | human-approval-required | auto-remediate-safe-subset
+
+# Standing incident bridge (Google Meet / Zoom / Slack huddle link)
+meeting_room: https://meet.google.com/xxx-yyyy-zzz
+
+# Teams that rotate through Fireline (the weekly incident front door).
+teams:
+  - SRE
+  - QA
+  - Platform
+  - Data
+rollout: Q2 2027
+
+# The critical user journeys you will put SLOs on.
+services:
+  - checkout
+  - login
+  - search

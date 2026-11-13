@@ -1,0 +1,31 @@
+# Example config — a 40-engineer product company.
+# Same format as the root kit.yaml, different answers.
+
+company: Acme Corp
+team_size: 40
+engineering_hours: 9-18 CET
+timezone: Europe/Madrid
+on_call: follow-the-sun
+severity_levels: 4
+contact: sre@acme.example
+
+stack:
+  metrics: Grafana
+  paging: PagerDuty
+  incidents: Linear
+
+ai_policy: human-approval-required
+
+meeting_room: https://meet.google.com/xxx-yyyy-zzz
+
+teams:
+  - SRE
+  - QA
+  - Platform
+  - Data
+rollout: Q2
+
+services:
+  - checkout
+  - login
+  - search
